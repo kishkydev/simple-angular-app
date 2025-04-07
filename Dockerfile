@@ -48,7 +48,7 @@ FROM nginx:1.25-alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy built files from build stage
-COPY --from=build /app/dist/simple-angular-app /usr/share/nginx/html
+COPY --from=build /app/dist/simple-angular-app/browser /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
