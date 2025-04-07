@@ -16,12 +16,12 @@
 
 
 
-# Expose port 80
-EXPOSE 4200
-ENV PORT 4200
+# # Expose port 80
+# EXPOSE 4200
+# ENV PORT 4200
 
-# Start Nginx
-CMD ["npm", "run", "start"]
+# # Start Nginx
+# CMD ["npm", "run", "start"]
 
 
 # Stage 1: Build the Angular app
